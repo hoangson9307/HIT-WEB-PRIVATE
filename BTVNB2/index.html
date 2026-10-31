@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to the Web class</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WEB PRIVATE 2026</h1>
+      <nav>
+        <ul>
+          <li><a href="#gioithieu">Giới thiệu</a></li>
+          <li><a href="#noidunghoc">Nội dung học</a></li>
+          <li><a href="#lichhoc">Lịch học</a></li>
+          <li><a href="#dangky">Đăng ký</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="gioithieu">
+        <h2>Giới thiệu</h2>
+        <p>Nội dung giới thiệu về lớp học.</p>
+        <p>
+          Lớp học dành cho những bạn
+          <b>chưa có kinh nghiệm lập trình Web</b>.<br />
+          <em>Bạn sẽ tự tay thực hành để hiểu cách tạo một trang web</em>, bắt
+          đầu với <mark>HTML cơ bản</mark>.
+        </p>
+        <figure>
+          <img src="img/anh.png" alt="Hình minh họa lớp học" width="300" />
+          <figcaption>Ba thành phần cơ bản của một trang web</figcaption>
+        </figure>
+        <p>
+          Tham khảo thêm các bài học khác tại
+          <a href="https://www.w3schools.com/html/" target="_blank">
+            W3Schools HTML Tutorial</a
+          >
+        </p>
+      </section>
+      <section id="noidunghoc">
+        <h2>Nội dung học</h2>
+        <p>Nội dung các bài học trong lớp.</p>
+        <ul>
+          <li>HTML: Xây dựng cấu trúc và nội dung trang.</li>
+          <li>CSS: Định dạng và trang trí trang web.</li>
+          <li>JavaScript: Thêm tính năng tương tác cho trang web.</li>
+        </ul>
+
+        <article>
+          <h3>Bài học 1: Giới thiệu HTML</h3>
+          <p>
+            Trong bài học này, bạn sẽ học cách tạo một trang web cơ bản bằng
+            HTML.
+          </p>
+          <h3>Bài học 2: Các phần tử HTML cơ bản</h3>
+          <p>
+            Trong bài học này, bạn sẽ học về các phần tử HTML phổ biến và cách
+            sử dụng chúng.
+          </p>
+          <h3>Bài học 3: Tạo liên kết và hình ảnh</h3>
+          <p>
+            Trong bài học này, bạn sẽ học cách tạo liên kết và chèn hình ảnh vào
+            trang web.
+          </p>
+        </article>
+      </section>
+      <section id="lichhoc">
+        <h2>Lịch học</h2>
+        <p>Thông tin về lịch học của lớp.</p>
+        <table>
+          <caption>
+            Lịch học lớp Introduction to the Web
+          </caption>
+          <thead>
+            <tr>
+              <th>Ngày</th>
+              <th>Thời gian</th>
+              <th>Nội dung</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01/01/2026</td>
+              <td>09:00 - 11:00</td>
+              <td>Bài học 1: Giới thiệu HTML</td>
+            </tr>
+            <tr>
+              <td>02/01/2026</td>
+              <td>09:00 - 11:00</td>
+              <td>Bài học 2: Các phần tử HTML cơ bản</td>
+            </tr>
+            <tr>
+              <td>03/01/2026</td>
+              <td>09:00 - 11:00</td>
+              <td>Bài học 3: Tạo liên kết và hình ảnh</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                Lịch học có thể thay đổi theo nhu cầu của lớp.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <hr />
+      <section id="dangky">
+        <h2>Đăng ký</h2>
+        <p>Form đăng ký tham gia lớp học.</p>
+        <form action="submit_registration.php" method="post">
+          <fieldset>
+            <legend>Thông tin cá nhân</legend>
+          <p>
+          <label for="name">Họ và tên:</label>
+          <input type="text" id="name" name="name" required /><br />
+          </p>
+          <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br />
+          </p>
+          <p>
+            <label for="level">Trình độ:</label>
+            <select id="level" name="level" required>
+              <option value="">Chọn trình độ</option>
+              <option value="beginner">Người mới bắt đầu</option>
+              <option value="intermediate">Trung cấp</option>
+              <option value="advanced">Nâng cao</option>
+            </select>
+          </p>
+          </fieldset>
+          <fieldset>
+            <legend>Nguyện vọng cá nhân</legend>
+            <p>
+              Ca học mong muốn:
+              <label >
+                <input type="radio" name="session" value="morning" required />
+                Buổi sáng
+              </label>
+              <label>
+                <input type="radio" name="session" value="afternoon" required />
+                Buổi chiều
+              </label>
+            </p>
+            <p>
+              <label for="goals">Nguyện vọng khi tham gia lớp:</label><br />
+              <textarea id="goals" name="goals" rows="4" cols="50" required></textarea>
+            </p>
+            <p>
+              <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+              <label for="newsletter">Tôi muốn tham gia thực hành.</label>
+            </p>
+          </fieldset>
+          <input type="submit" value="Đăng ký" />
+      </section>
+      <aside>
+        <h2>Thông báo</h2>
+        <p>Chuẩn bị laptop cho buổi thực hành tiếp theo.</p>
+      </aside>
+    </main>
+    <footer>
+      <p>Liên hệ: hoangson9307@email.com</p>
+      <p>&copy; 2026 Khóa học HTML. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
