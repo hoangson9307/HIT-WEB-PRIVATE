@@ -1,0 +1,69 @@
+/* 
+ reset css 
+ text: 
+   text-align: left right center justify(căn đều 2 bên)
+    text-decoration; underline, line-through
+ 
+ font
+    font size : chỉnh cỡ chữ
+    font-family: chỉnh kiểu phông chữ
+    font-weight: chỉnh độ đậm nhạt của nét chữ
+    font-style: in nghieeng chu kiểu chữ 
+color: red, rgba, #ffffff
+background
+    background-color: đổi màu nền
+    background-image: nền bằng hình ảnh
+
+box model
+    padding: 
+    border: left right, bottom, top, style, width(chỉnh độ dày)
+
+ 
+ 
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  /* gap: 16px; */
+}
+h1 {
+  /* text-align:; /*căn trái phải của chữ , đoạn văn */
+  /*text-decoration: line-through; */
+
+  /* font-size: 16px; */
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  /* font-weight: ; */
+  /* font-style: ; */
+  color: rgba(45, 143, 62, 0.596);
+
+  /* background-color: aqua; */
+  /* background-image: none; */
+  /* background: linear-gradient(red, blue); */
+  font-family: "Roboto", sans-serif;
+}
+.btn {
+  border: none;
+  padding: 10px 20px 30px 40px;
+  /*padding: top right botton left (có thể ghi 2 hoặc 3 cái)*/
+
+  cursor: pointer;
+
+  color: brown;
+}
+.btn-link {
+  background-color: aqua;
+  border: 1px solid salmon;
+  margin: 5px;
+}
+i {
+  margin: 10px;
+}

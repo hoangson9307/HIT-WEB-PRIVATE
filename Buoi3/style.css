@@ -1,0 +1,65 @@
+h1 {
+  color: rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255);
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace; /*chinh kieu chu */
+  font-weight: 100; /*chỉnh nét chứ */
+  font-style: italic;
+
+  text-align: center; /* căn chỉnh chữ trái phải giữa ...*/
+  text-decoration: none;
+  text-transform: capitalize;
+  text-shadow: 10cap;
+  text-justify: auto;
+}
+h2 {
+  color: b;
+}
+li {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  font-family: "Courier New", Courier, monospace;
+}
+
+div {
+  text-align: center;
+  text-justify: auto;
+}
+.avatar {
+  text-align: center;
+}
+
+.avatar img {
+  border: 2px solid black;
+  border-radius: 99px;
+  text-align: center;
+  object-fit: cover;
+  width: 100px;
+}
+
+h3 {
+  color: red;
+  text-align: center;
+}
+.major {
+  text-align: center;
+  text-justify: auto;
+  color: yellowgreen;
+}
+.card {
+  padding: auto;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 99px;
+  size: 100px;
+  background-color: aqua;
+}
